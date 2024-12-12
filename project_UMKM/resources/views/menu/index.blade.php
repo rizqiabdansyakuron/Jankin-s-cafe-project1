@@ -125,11 +125,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-3 bg-dark text-white text-center">
-        <p>© 2024 UMKM Kopi. Semua Hak Dilindungi.</p>
-    </footer>
-
+   
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
