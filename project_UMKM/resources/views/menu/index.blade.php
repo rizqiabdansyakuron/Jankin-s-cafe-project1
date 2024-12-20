@@ -75,7 +75,26 @@
         <div class="container">
             <h2 class="text-center">Produk Kami</h2>
             <div class="row mt-4">
+                @foreach ($menus as $menu)
                 <!-- Product 1 -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="{{ asset('storage/' . $menu->foto) }}"
+                            class="card-img-top menu-kopi" alt="Kopi Arabica">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ $menu->nama_menu }}</h5>
+                            <p class="card-text">Aroma khas dengan rasa lembut dan sedikit asam.</p>
+                            <h2 class="" style="color:#654520">{{ number_format($menu->harga) }}</h2>
+                            <a href="#" class="btn btn-warning text-white" style="background: #825B32">
+                                <img src="{{ asset('buy.png') }}" alt="icon" width="25px">
+                                Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+
+                {{-- <!-- Product 1 -->
                 <div class="col-md-4">
                     <div class="card">
                         <img src="https://i.pinimg.com/736x/06/83/a1/0683a180a964320d3f81d6840fde1771.jpg"
@@ -123,9 +142,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
-   
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
